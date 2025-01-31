@@ -1,6 +1,6 @@
 class Animal:
     def fazer_som(self):
-        raise NotImplementedError("Subclasse deve implementar este método!")
+        raise NotImplementedError("Subclasse deve implementar este metodo!")
 
 class Cachorro(Animal):
     def fazer_som(self):
