@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="{% static 'blog/css/styles.css' %}">
+</head>
+<body>
+    <h1>Lista de Tarefas</h1>
+    <ul>
+        {% for tarefa in tarefas %}
+            <li>
+                <h3>{{ tarefa.descricao }}</h3>
+                <p>Status: {% if tarefa.concluida %}Concluída{% else %}Não Concluída{% endif %}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
