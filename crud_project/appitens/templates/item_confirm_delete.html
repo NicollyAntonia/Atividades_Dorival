@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Voce tem certeza que desja excluir permanentemente este item?</h1>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Sim quero fazer essa loucura</button>
+    </form>
+    <a href="{% url 'item_read' %}">Não, eu deisisto de excluir</a>
+</body>
+</html>
