@@ -4,4 +4,4 @@ from .models import evento
 class eventoSerializer(serializers.ModelSerializer):
     class Meta:
         model = evento
-        fields = '__all__'
+        fields = ['id', 'nome', 'descricao', 'data', 'local', 'categoria']

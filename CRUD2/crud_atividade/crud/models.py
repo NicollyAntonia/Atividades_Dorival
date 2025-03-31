@@ -1,6 +1,5 @@
 from django.db import models
 
-
 class evento(models.Model):
     class Categoria(models.TextChoices):
         MUSICA = 'Música', 'Música'
@@ -15,4 +14,4 @@ class evento(models.Model):
     categoria = models.CharField(max_length=7, choices=Categoria.choices)
 
     def __str__(self):
-        return f'{self.nome}--{self.categoria}'
+        return f'{self.nome} -- {self.categoria}'
