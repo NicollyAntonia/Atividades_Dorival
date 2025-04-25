@@ -22,4 +22,3 @@ class Usuario (AbstractUser):
     planeta = models.ForeignKey(Planeta, on_delete=models.CASCADE, blank = True, null=True)
     cor = models.CharField(max_length=15,blank=True, null=True)
     foto = models.ImageField(upload_to='images/',blank = True, null = True)
-
