@@ -5,7 +5,7 @@ from rest_framework import serializers,status
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework_simplejwt.views import TokenObtainPairView
-#from .serializers import
+from .serializers import UsuarioSerializers, LoginSerializer
 from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView,CreateAPIView
 
 class UsuarioPaginacao(PageNumberPagination):
